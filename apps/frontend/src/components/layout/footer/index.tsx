@@ -105,7 +105,7 @@ const GetFooter = gql(/*GraphQL*/`query getFooter($channelId: String!, $locale: 
         }
     }
 }`)
-const FooterLinks = gql(/*GraphQL*/`fragment FooterLinks on FooterConfigBlockBlockData {
+const FooterLinks = gql(/*GraphQL*/`fragment FooterLinks on FooterConfigBlockLinkListBlock {
     caption:LinkListCaption
     items: LinkListItems { ...FooterLinkData }
 }`)

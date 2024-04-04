@@ -8,7 +8,7 @@ exports.fragments = [
       workId: WorkId,
       guidValue: GuidValue
     }`,
-    `fragment ContentLinkSearch on ContentModelReferenceSearch {
+    `fragment ContentLinkSearch on ContentModelReference {
       id: Id,
       workId: WorkId,
       guidValue: GuidValue
@@ -23,7 +23,7 @@ exports.fragments = [
         }
         path:RelativePath
     }`,
-    `fragment ContentAreaItemData on ContentAreaItemModelSearch {
+    `fragment ContentAreaItemData on ContentAreaItemModel {
         item: ContentLink {
             ...ContentLinkSearch
             data: Expanded {
@@ -32,7 +32,7 @@ exports.fragments = [
         }
         displayOption:DisplayOption
     }`,
-    `fragment BlockContentAreaItemSearchData on ContentAreaItemModelSearch {
+    `fragment BlockContentAreaItemSearchData on ContentAreaItemModel {
         item: ContentLink {
             ...ContentLinkSearch
             data: Expanded {
@@ -72,7 +72,7 @@ exports.fragments = [
         path: RelativePath
       }
     }`,
-    `fragment ImageDataSearch on ContentModelReferenceSearch {
+    `fragment ImageDataSearch on ContentModelReference {
       ...ContentLinkSearch
       url: Url
       data: Expanded {
@@ -88,7 +88,7 @@ exports.fragments = [
     `fragment PageData on IContent {
         ...IContentData
     }`,
-    `fragment ContentAreaItemBase on ContentAreaItemModelSearch {
+    `fragment ContentAreaItemBase on ContentAreaItemModel {
         contentLink:ContentLink { 
             id:Id
             workId:WorkId

@@ -10,7 +10,7 @@ export const fragments = [
       workId: WorkId,
       guidValue: GuidValue
     }`,
-    `fragment ContentLinkSearch on ContentModelReferenceSearch {
+    `fragment ContentLinkSearch on ContentModelReference {
       id: Id,
       workId: WorkId,
       guidValue: GuidValue
@@ -74,7 +74,7 @@ export const fragments = [
         path: RelativePath
       }
     }`,
-    `fragment ImageDataSearch on ContentModelReferenceSearch {
+    `fragment ImageDataSearch on ContentModelReference {
       ...ContentLinkSearch
       url: Url
       data: Expanded {

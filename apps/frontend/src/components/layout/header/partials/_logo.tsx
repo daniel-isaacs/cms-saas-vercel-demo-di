@@ -13,7 +13,7 @@ const Logo = forwardRef<HTMLDivElement>((props, ref) => {
           height={39}
           unoptimized
           priority
-          className="dark:brightness-0	dark:invert"
+          // className="dark:brightness-0	dark:invert"
         />
       </Link>
     </div>

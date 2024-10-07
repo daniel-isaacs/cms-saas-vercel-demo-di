@@ -125,10 +125,10 @@ export default function Footer({
       <div className="container mx-auto grid text-white mt-16 lg:mt-32 lg:text-center lg:justify-center">
         <div className="lg:justify-center flex mb-16">
           <Image
-            src={"/assets/moseybank-logo-white.svg"}
-            width={200}
-            height={35}
-            alt="Moseybank Logo"
+            src={"/assets/bh-logo.png"}
+            width={300}
+            height={39}
+            alt="BH Logo"
             unoptimized
           />
         </div>

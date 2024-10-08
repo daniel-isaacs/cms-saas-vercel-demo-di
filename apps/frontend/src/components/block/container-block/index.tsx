@@ -50,7 +50,7 @@ const ContainerBlock: CmsComponent<
   ) {
     // Set background image style
     backgroundStyle = {
-      backgroundImage: `url(${backgroundImage.url})`,
+      backgroundImage: `url(${backgroundImage.url.default})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     };

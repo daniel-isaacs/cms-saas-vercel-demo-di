@@ -53,8 +53,9 @@ const ContainerBlock: CmsComponent<
     // Set background image style
     // const bgImageUrl = refToURL(backgroundImage.url)
     // const bgImage = refToURL(backgroundImage.url?.default)
+    const bgImage: any = backgroundImage.url;
     backgroundStyle = {
-      backgroundImage: `url(${backgroundImage.url?.default})`,
+      backgroundImage: `url(${bgImage.default})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     };

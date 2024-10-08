@@ -4,6 +4,7 @@
             "title": "Select Language",
             "locales": {
                 "en": "English",
+                "es": "Espanol",
                 "nl": "Nederlands",
                 "nl-BE": "Vlaams"
             }
@@ -14,6 +15,18 @@
             "title": "Selecteer taal",
             "locales": {
                 "en": "English",
+                "es": "Espanol",
+                "nl": "Nederlands",
+                "nl-BE": "Vlaams"
+            }
+        }
+    },
+    "es": {
+        "languagePicker": {
+            "title": "Seleccione idioma",
+            "locales": {
+                "en": "English",
+                "es": "Espanol",
                 "nl": "Nederlands",
                 "nl-BE": "Vlaams"
             }

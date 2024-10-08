@@ -8,6 +8,7 @@ import CardBlock from './card-block'
 import QuoteBlock from './quote-block'
 import BlogListingBlock from './blog-listing-block'
 import OdpEmbedBlock from './odp-embed-block'
+import ButtonBlock from './button-block'
 
 export const Blocks : ComponentTypeDictionary = [
     {
@@ -45,6 +46,10 @@ export const Blocks : ComponentTypeDictionary = [
     {
         type: ['Component', 'BlogListingBlock'],
         component: BlogListingBlock
+    },
+    {
+        type: ['Component', 'ButtonBlock'],
+        component: ButtonBlock
     }
 
 ]

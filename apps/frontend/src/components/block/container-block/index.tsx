@@ -2,6 +2,7 @@ import { gql } from "@gql/gql";
 import type * as GraphQL from "@gql/graphql";
 import { type CmsComponent } from "@remkoj/optimizely-cms-react";
 import { CmsContentArea, getServerContext } from "@remkoj/optimizely-cms-react/rsc";
+import { refToURL } from '@/lib/conversions'
 
 const columnClassMap: { [key: string]: string } = {
   1: "grid-cols-1",
@@ -49,8 +50,9 @@ const ContainerBlock: CmsComponent<
     "url" in backgroundImage
   ) {
     // Set background image style
+    const bgImageUrl = refToURL(backgroundImage)
     backgroundStyle = {
-      backgroundImage: `url(${backgroundImage.url.default})`,
+      backgroundImage: `url(${bgImageUrl})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     };

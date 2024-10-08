@@ -5,8 +5,8 @@ import { Session } from '@remkoj/optimizely-one-nextjs/api'
 
 // Read the site configuration, default to "en" as only routed language if there's no configuration
 const defaultLocale = 'en'
-const locales = ['en','nl']
-const slugs = ['en','nl']
+const locales = ['en','es','nl']
+const slugs = ['en','es','nl']
 const DEBUG = process.env.NODE_ENV == 'development'
 
 /**

@@ -47,13 +47,14 @@ const ContainerBlock: CmsComponent<
   if (
     backgroundImage &&
     typeof backgroundImage === "object" &&
-    "url" in backgroundImage
+    "url" in backgroundImage &&
+    typeof backgroundImage.url === "object"
   ) {
     // Set background image style
     // const bgImageUrl = refToURL(backgroundImage.url)
-    const bgImage = refToURL(backgroundImage)
+    // const bgImage = refToURL(backgroundImage.url?.default)
     backgroundStyle = {
-      backgroundImage: `${bgImage}`,
+      backgroundImage: `url(${backgroundImage.url?.default})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     };

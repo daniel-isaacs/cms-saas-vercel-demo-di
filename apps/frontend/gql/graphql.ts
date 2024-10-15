@@ -667,6 +667,7 @@ export enum Locales {
   ALL = 'ALL',
   NEUTRAL = 'NEUTRAL',
   en = 'en',
+  es = 'es',
   nl = 'nl'
 }
 

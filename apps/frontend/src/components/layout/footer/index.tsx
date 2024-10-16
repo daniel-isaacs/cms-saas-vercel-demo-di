@@ -26,7 +26,7 @@ export default async function SiteFooter({ locale }: SiteFooterProps) {
     <Footer
       dict={dict}
       locale={footerLocale}
-      locales={[{code: 'en'},{code: 'nl'}]}
+      locales={[{code: 'en'},{code: 'es'},{code: 'nl'}]}
       footerItems={footerItems}
       footerCopyright={footerCopyright ?? ""}
       footerSubLinks={footerSubLinks}

@@ -55,15 +55,15 @@ export const DefaultHeadingElement : HeadingStylesComponent<HeadingElementDataFr
             break;
         case 'h4':
             cssClasses.push('font-bold my-0')
-            cssClasses.push('text-[3.6rem]')
-            cssClasses.push('lg:text-[4.2rem]')
-            cssClasses.push('xl:text-[4.8rem]')
+            cssClasses.push('text-[3.0rem]')
+            cssClasses.push('lg:text-[3.6rem]')
+            cssClasses.push('xl:text-[4.2rem]')
             break;
         case 'h5':
             cssClasses.push('font-bold my-0')
-            cssClasses.push('text-[3.6rem]')
-            cssClasses.push('lg:text-[4.2rem]')
-            cssClasses.push('xl:text-[4.8rem]')
+            cssClasses.push('text-[2.4rem]')
+            cssClasses.push('lg:text-[3.0rem]')
+            cssClasses.push('xl:text-[3.6rem]')
             break;
         case 'h6':
             cssClasses.push('font-bold my-0')

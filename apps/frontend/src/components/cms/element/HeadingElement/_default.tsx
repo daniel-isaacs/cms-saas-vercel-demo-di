@@ -2,7 +2,7 @@ import type { HeadingStylesComponent } from './displayTemplates'
 import { type HeadingElementDataFragment } from "@/gql/graphql"
 import { extractSettings } from "@remkoj/optimizely-cms-react/components"
 
-export const DefaultHeadingElement : HeadingStylesComponent<HeadingElementDataFragment> = ({ data: { headingText }, layoutProps, className, ...containerProps }) => {
+export const DefaultHeadingElement : HeadingStylesComponent<HeadingElementDataFragment> = ({ data: { headingText, subheading }, layoutProps, className, ...containerProps }) => {
     const { headingType, showAs, textAlign, transform } = extractSettings(layoutProps)
     const cssClasses : (string | undefined)[] = [ className, 'flex-initial' ]
     const Component = showAs == 'element' ? 'p' : !headingType || headingType == 'plain' ? 'p' : headingType
@@ -75,5 +75,8 @@ export const DefaultHeadingElement : HeadingStylesComponent<HeadingElementDataFr
 
     const cssClassName = cssClasses.filter(x => x).join(' ')
 
-    return <Component className={ cssClassName } {...containerProps}>{ headingText }</Component>
+    return <div>
+        <Component className={ cssClassName } {...containerProps}>{ headingText }</Component>
+        <div>{ subheading || "" }</div>
+        </div>
 }

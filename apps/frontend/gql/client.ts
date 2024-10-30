@@ -74,6 +74,7 @@ export const ContentRecsElementDataFragmentDoc = gql`
 export const HeadingElementDataFragmentDoc = gql`
     fragment HeadingElementData on HeadingElement {
   headingText
+  subheading
 }
     `;
 export const ImageElementDataFragmentDoc = gql`

@@ -31,7 +31,7 @@ const documents = {
     "query getArticleListElementItems($count: Int!, $locale: [Locales]) {\n  BlogPostPage(\n    orderBy: {_metadata: {published: DESC}}\n    limit: $count\n    locale: $locale\n    where: {_metadata: {status: {eq: \"Published\"}}}\n  ) {\n    items {\n      ...IContentData\n      articleMeta: _metadata {\n        key\n        published\n        lastModified\n      }\n      blogTitle: Heading\n      blogSubtitle: ArticleSubHeading\n      blogImage: BlogPostPromoImage {\n        ...ReferenceData\n      }\n      blogBody: BlogPostBody {\n        json\n      }\n      blogAuthor: ArticleAuthor\n    }\n  }\n}": types.getArticleListElementItemsDocument,
     "fragment CTAElementData on CTAElement {\n  cta_text: Text\n  cta_link: Link {\n    ...LinkData\n  }\n}": types.CTAElementDataFragmentDoc,
     "fragment ContentRecsElementData on ContentRecsElement {\n  ElementDeliveryApiKey\n  ElementRecommendationCount\n}": types.ContentRecsElementDataFragmentDoc,
-    "fragment HeadingElementData on HeadingElement {\n  headingText\n}": types.HeadingElementDataFragmentDoc,
+    "fragment HeadingElementData on HeadingElement {\n  headingText\n  subheading\n}": types.HeadingElementDataFragmentDoc,
     "fragment ImageElementData on ImageElement {\n  altText\n  imageLink {\n    ...ReferenceData\n  }\n}": types.ImageElementDataFragmentDoc,
     "fragment ParagraphElementData on ParagraphElement {\n  text {\n    json\n  }\n}": types.ParagraphElementDataFragmentDoc,
     "fragment TestimonialElementData on TestimonialElement {\n  customerName\n  customerLocation\n  customerImage {\n    ...ReferenceData\n  }\n  referenceTitle\n  referenceText {\n    json\n  }\n}": types.TestimonialElementDataFragmentDoc,
@@ -142,7 +142,7 @@ export function gql(source: "fragment ContentRecsElementData on ContentRecsEleme
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function gql(source: "fragment HeadingElementData on HeadingElement {\n  headingText\n}"): (typeof documents)["fragment HeadingElementData on HeadingElement {\n  headingText\n}"];
+export function gql(source: "fragment HeadingElementData on HeadingElement {\n  headingText\n  subheading\n}"): (typeof documents)["fragment HeadingElementData on HeadingElement {\n  headingText\n  subheading\n}"];
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

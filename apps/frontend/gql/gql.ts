@@ -33,7 +33,7 @@ const documents = {
     "fragment ContentRecsElementData on ContentRecsElement {\n  ElementDeliveryApiKey\n  ElementRecommendationCount\n}": types.ContentRecsElementDataFragmentDoc,
     "fragment HeadingElementData on HeadingElement {\n  headingText\n}": types.HeadingElementDataFragmentDoc,
     "fragment ImageElementData on ImageElement {\n  altText\n  imageLink {\n    ...ReferenceData\n  }\n}": types.ImageElementDataFragmentDoc,
-    "fragment ParagraphElementData on ParagraphElement {\n  text {\n    json\n  }\n}": types.ParagraphElementDataFragmentDoc,
+    "fragment ParagraphElementData on ParagraphElement {\n  text {\n    json\n    html\n  }\n}": types.ParagraphElementDataFragmentDoc,
     "fragment TestimonialElementData on TestimonialElement {\n  customerName\n  customerLocation\n  customerImage {\n    ...ReferenceData\n  }\n  referenceTitle\n  referenceText {\n    json\n  }\n}": types.TestimonialElementDataFragmentDoc,
     "fragment VideoElementData on VideoElement {\n  title\n  video {\n    ...ReferenceData\n  }\n  placeholder {\n    ...ReferenceData\n  }\n}": types.VideoElementDataFragmentDoc,
     "fragment BlankExperienceData on BlankExperience {\n  BlankExperienceSeoSettings {\n    ...PageSeoSettingsPropertyData\n  }\n  ...ExperienceData\n}": types.BlankExperienceDataFragmentDoc,
@@ -150,7 +150,7 @@ export function gql(source: "fragment ImageElementData on ImageElement {\n  altT
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function gql(source: "fragment ParagraphElementData on ParagraphElement {\n  text {\n    json\n  }\n}"): (typeof documents)["fragment ParagraphElementData on ParagraphElement {\n  text {\n    json\n  }\n}"];
+export function gql(source: "fragment ParagraphElementData on ParagraphElement {\n  text {\n    json\n    html\n  }\n}"): (typeof documents)["fragment ParagraphElementData on ParagraphElement {\n  text {\n    json\n    html\n  }\n}"];
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

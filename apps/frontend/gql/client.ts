@@ -88,6 +88,7 @@ export const ParagraphElementDataFragmentDoc = gql`
     fragment ParagraphElementData on ParagraphElement {
   text {
     json
+    html
   }
 }
     `;

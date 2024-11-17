@@ -27,7 +27,10 @@ export const ParagraphElementElement : CmsComponent<ParagraphElementDataFragment
 
     
 
-    return <CmsEditable as={RichText} factory={ factory ?? getFactory() } text={ text?.json } cmsId={ contentLink.key } className={`rich-text prose${ width }${ align }`}/>
+    // return <CmsEditable as={RichText} factory={ factory ?? getFactory() } text={ text?.json } cmsId={ contentLink.key } className={`rich-text prose${ width }${ align }`}/>
+
+    return <CmsEditable dangerouslySetInnerHTML={{ __html: text?.html }} className={`rich-text prose${ width }${ align }`}/>
+
 }
 ParagraphElementElement.displayName = "Paragraph (Element/ParagraphElement)"
 ParagraphElementElement.getDataFragment = () => ['ParagraphElementData', ParagraphElementDataFragmentDoc]

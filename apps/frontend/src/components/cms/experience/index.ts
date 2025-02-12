@@ -1,9 +1,15 @@
 // Auto generated dictionary
-import { ComponentTypeDictionary } from "@remkoj/optimizely-cms-react";
+// @not-modified => When this line is removed, the "force" parameter of the CLI tool is required to overwrite this file
+import { type ComponentTypeDictionary } from "@remkoj/optimizely-cms-react";
+import BlogSectionExperienceComponent from "./BlogSectionExperience";
 import BlankExperienceComponent from "./BlankExperience";
 
 // Build dictionary
-export const experienceDictionary : ComponentTypeDictionary = [
+export const ExperienceFactory : ComponentTypeDictionary = [
+    { 
+        type: "BlogSectionExperience", 
+        component: BlogSectionExperienceComponent 
+    },
     { 
         type: "BlankExperience", 
         component: BlankExperienceComponent 
@@ -11,4 +17,4 @@ export const experienceDictionary : ComponentTypeDictionary = [
 ];
 
 // Export dictionary
-export default experienceDictionary;
+export default ExperienceFactory;

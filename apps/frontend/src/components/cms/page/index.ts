@@ -1,29 +1,20 @@
 // Auto generated dictionary
-import { ComponentTypeDictionary } from "@remkoj/optimizely-cms-react";
-import BlogPostPageComponent from "./BlogPostPage";
+// @not-modified => When this line is removed, the "force" parameter of the CLI tool is required to overwrite this file
+import { type ComponentTypeDictionary } from "@remkoj/optimizely-cms-react";
 import LandingPageComponent from "./LandingPage";
-import StandardPageComponent from "./StandardPage";
-import StartPageComponent from "./StartPage";
+import BlogPostPageComponent from "./BlogPostPage";
 
 // Build dictionary
-export const pageDictionary : ComponentTypeDictionary = [
-    { 
-        type: "BlogPostPage", 
-        component: BlogPostPageComponent 
-    },
+export const PageFactory : ComponentTypeDictionary = [
     { 
         type: "LandingPage", 
         component: LandingPageComponent 
     },
     { 
-        type: "StandardPage", 
-        component: StandardPageComponent 
-    },
-    { 
-        type: "StartPage", 
-        component: StartPageComponent 
+        type: "BlogPostPage", 
+        component: BlogPostPageComponent 
     }
 ];
 
 // Export dictionary
-export default pageDictionary;
+export default PageFactory;

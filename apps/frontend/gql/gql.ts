@@ -110,7 +110,7 @@ export function gql(source: "fragment ContentRecsElementData on ContentRecsEleme
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function gql(source: "fragment HeadingElementData on HeadingElement {\n  headingText\n  subheading\n}"): (typeof documents)["fragment HeadingElementData on HeadingElement {\n  headingText\n  subheading\n}"];
+export function gql(source: "fragment HeadingElementData on HeadingElement {\n  headingText\n}"): (typeof documents)["fragment HeadingElementData on HeadingElement {\n  headingText\n}"];
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

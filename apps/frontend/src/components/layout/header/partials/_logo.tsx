@@ -16,10 +16,11 @@ export const Logo: FunctionComponent<LogoProps> = ({
     logo,
     theme_switcher: false,
   });
+  const myLogoUrl="https://app-ocstdi202505r3z5p001.cms.optimizely.com/globalassets/_global/hds-logo.png";
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={logoUrl}
+        src={myLogoUrl}
         alt="Mosey Bank Logo"
         fill
         unoptimized

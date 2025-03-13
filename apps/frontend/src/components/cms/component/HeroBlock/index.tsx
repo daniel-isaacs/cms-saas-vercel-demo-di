@@ -68,7 +68,7 @@ export const HeroBlockComponent: CmsComponent<HeroBlockDataFragment> = ({
           }`}
         >
           <div
-            className={`prose lg:prose-h1:text-7xl lg:prose-h1:my-12 prose-h1:font-bold prose-p:text-2xl prose-p:leading-10 prose-img:my-4 ${hasImage ? "" : "max-w-[900px] mx-auto"}`}
+            className={`prose lg:prose-h1:text-5xl lg:prose-h1:my-12 prose-h1:font-bold prose-p:text-2xl prose-p:leading-10 prose-img:my-4 ${hasImage ? "" : "max-w-[900px] mx-auto"}`}
           >
             {(inEditMode || eyebrow) && (
               <CmsEditable as="p" cmsFieldName="Eyebrow" className="eyebrow">

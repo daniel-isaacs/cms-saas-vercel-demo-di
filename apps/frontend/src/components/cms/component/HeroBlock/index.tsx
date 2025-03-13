@@ -22,6 +22,7 @@ const ColorClasses = {
   green: "on-verdansk",
   red: "on-paleruby",
   purple: "on-people-eater",
+  white: "on-white",
 };
 
 /**

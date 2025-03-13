@@ -9,7 +9,7 @@ type LogoProps = JSX.IntrinsicElements["a"] & {
 };
 
 export const Logo: FunctionComponent<LogoProps> = ({
-  logo = "/assets/moseybank-logo.svg",
+  logo = "https://app-ocstdi202505r3z5p001.cms.optimizely.com/globalassets/_global/hds-logo.png",
   ...divProps
 }) => {
   const { logo: logoUrl } = useFlag("layout_configuration", {

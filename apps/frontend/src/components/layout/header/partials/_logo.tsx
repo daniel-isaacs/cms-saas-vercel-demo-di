@@ -21,7 +21,7 @@ export const Logo: FunctionComponent<LogoProps> = ({
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={logoUrl}
+        src="/assets/logo_celestica_pos.svg"
         alt="Mosey Bank Logo"
         fill
         unoptimized

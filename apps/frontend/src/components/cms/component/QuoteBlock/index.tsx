@@ -38,7 +38,7 @@ const QuoteBlock: CmsComponent<QuoteBlockDataFragment> = ({
 
   return (
     <figure
-      className={`p-4 lg:p-12 flex flex-col rounded-[40px] relative transition-all duration-300 before:content-[''] before:z-[-1] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-azure before:rounded-[40px] before:transition-all before:duration-300 before:ease-in-out ${additionalClasses.join(
+      className={`min-h-full p-4 lg:p-12 flex flex-col rounded-[40px] relative transition-all duration-300 before:content-[''] before:z-[-1] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-azure before:rounded-[40px] before:transition-all before:duration-300 before:ease-in-out ${additionalClasses.join(
         " "
       )}`}
     >

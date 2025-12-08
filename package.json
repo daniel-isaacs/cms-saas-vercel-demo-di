@@ -34,6 +34,14 @@
   },
   "resolutions": {
     "whatwg-url": "^14",
-    "@graphql-codegen/visitor-plugin-common": "file:./packages/graphql-codegen-visitor-plugin-common-v6.0.0-patched.tgz"
+    "@graphql-codegen/visitor-plugin-common": "file:./packages/graphql-codegen-visitor-plugin-common-v6.0.0-patched.tgz",
+    "@remkoj/optimizely-cms-api": "6.0.0-pre10",
+    "@remkoj/optimizely-cms-cli": "6.0.0-pre10",
+    "@remkoj/optimizely-graph-cli": "6.0.0-pre10",
+    "@remkoj/optimizely-graph-functions": "6.0.0-pre10",
+    "@remkoj/optimizely-cms-nextjs": "6.0.0-pre10",
+    "@remkoj/optimizely-cms-react": "6.0.0-pre10",
+    "@remkoj/optimizely-graph-client": "6.0.0-pre10",
+    "@remkoj/optimizely-one-nextjs": "6.0.0-pre10"
   }
 }

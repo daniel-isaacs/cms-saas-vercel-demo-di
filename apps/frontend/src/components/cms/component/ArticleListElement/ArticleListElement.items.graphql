@@ -1,14 +1,16 @@
-query getArticleListElementItems($count: Int!, $locale: [Locales], $topics: [String], $excludeKeys: [String]) {
-  BlogPostPage (
+query getArticleListElementItems(
+  $count: Int!
+  $locale: [Locales]
+  $topics: [String]
+  $excludeKeys: [String]
+) {
+  BlogPostPage(
     orderBy: { _metadata: { published: DESC } }
     limit: $count
     locale: $locale
-    where: { 
-      _metadata: { 
-        status: { eq: "Published" },
-        key: { notIn: $excludeKeys }
-      },
-      Topic: { in: $topics } 
+    where: {
+      _metadata: { status: { eq: "Published" }, key: { notIn: $excludeKeys } }
+      Topic: { in: $topics }
     }
   ) {
     items {
@@ -21,18 +23,11 @@ query getArticleListElementItems($count: Int!, $locale: [Locales], $topics: [Str
       blogTitle: Heading
       blogSubtitle: ArticleSubHeading
       blogImage: BlogPostPromoImage {
-      type: __typename
+        type: __typename
         ...ReferenceData
-        item @depend(on: "ContentReference.item") {
-          ... on ImageMedia {
-            __typename
-            AltText
-          }
-          ...cmsPublicImage
-        }
       }
       blogBody: BlogPostBody {
-          json
+        json
       }
       blogAuthor: ArticleAuthor
     }

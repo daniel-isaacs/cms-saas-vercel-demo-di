@@ -1,4 +1,8 @@
-query getBlogPostPageMetaData($key: String!, $version: String, $locale: [Locales!]) {
+query getBlogPostPageMetaData(
+  $key: String!
+  $version: String
+  $locale: [Locales!]
+) {
   BlogPostPage(
     where: { _metadata: { key: { eq: $key }, version: { eq: $version } } }
     locale: $locale
@@ -17,12 +21,6 @@ query getBlogPostPageMetaData($key: String!, $version: String, $locale: [Locales
       image: BlogPostPromoImage {
         type: __typename
         ...ReferenceData
-        item @depend(on: "ContentReference.item") {
-          ... on ImageMedia {
-            AltText
-          }
-          ...cmpPublicImage
-        }
       }
       topics: Topic
       seo: SeoSettings {
@@ -32,12 +30,6 @@ query getBlogPostPageMetaData($key: String!, $version: String, $locale: [Locales
         image: SharingImage {
           type: __typename
           ...ReferenceData
-          item @depend(on: "ContentReference.item") {
-            ... on ImageMedia {
-              AltText
-            }
-            ...cmpPublicImage
-          }
         }
         type: GraphType
       }

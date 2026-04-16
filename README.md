@@ -1,5 +1,8 @@
 # Optimizely CMS Demo Site <!-- omit in toc -->
 
+> [!WARNING]
+> There'll be an update of Optimizely SaaS CMS that is incompatible with all SDK versions prior to 5.1.6. If you don't upgrade, you will see empty pages (main website) and "Component not found" messages (preview).
+
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 
 > [!TIP]
@@ -81,4 +84,5 @@ For Content Recommendations to work, the following steps are needed:
 * [Enable on-page / in context editing](docs/editing.md)
 * [Supported environment variables](docs/env-vars.md)
 * [Custom demo building](docs/demo-building.md)
+
 * [General solution description](docs/solution/index.md)
